@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>播放</title>
+	</head>
+	<body>
+		<div id="playercontainer"></div>
+		<script type="text/javascript" src="./player/cyberplayer.js"></script>
+		<script type="text/javascript">
+			var player = cyberplayer("playercontainer").setup({     
+				width: 960, // 宽度，也可以支持百分比（不过父元素宽度要有）
+				height: 600, // 高度，也可以支持百分比
+				title: 'demo示例', // 标题
+				isLive: true, // 必须设置，表明是直播视频
+				file: "http://cmgw-vpc.lechange.com:8888/LCO/8C0002DPAK1F032/0/0/20220712T064908/77f7a31c771a2474dbe7fae959c63476.m3u8", // //您的视频源的地址（目前是乐橙示例播放地址）
+				image: '', // 预览图
+				autostart: false, // 是否自动播放
+				stretching: "uniform", // 拉伸设置
+				repeat: false, // 是否重复播放
+				volume: 0, // 音量，注：仅当用户同意、网站由用户激活或媒体无声时允许自动播放
+				controls: true, // 是否显示控制栏
+				hls: {
+					reconnecttime: 5 // hls直播重连间隔秒数
+				},
+				ak: "d65c447628b34f59a1f7ead3dd152b1e" // 百度智能云平台注册（https://cloud.baidu.com）即可获得accessKey
+			});
+		</script>
+	</body>
+</html>
