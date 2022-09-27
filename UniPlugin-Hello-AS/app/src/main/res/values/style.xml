@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="hintTextAppearance" parent="TextAppearance.AppCompat"></style>
+</resources>

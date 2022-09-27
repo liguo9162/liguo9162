@@ -1,0 +1,7 @@
+include ':app'
+include ':uniplugin_module'
+include ':uniplugin_component'
+include ':uniplugin_richalert'
+include ':aliyun_phone'
+include ':jialian_lecheng'
+include ':ying_shi'

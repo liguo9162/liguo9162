@@ -1,0 +1,62 @@
+{
+  "nativePlugins": [
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "TestModule",
+          "class": "io.dcloud.uniplugin.TestModule"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "component",
+          "name": "myText",
+          "class": "io.dcloud.uniplugin.TestText"
+        }
+      ]
+    },
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "DCloud-RichAlert",
+          "class": "uni.dcloud.io.uniplugin_richalert.RichAlertModule"
+        }
+      ]
+    },
+    {
+      "hooksClass": "com.app.aliyunphone.PhoneProxy",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "aliyun_phone",
+          "class": "com.app.aliyunphone.PhoneModule"
+        }
+      ]
+    },
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "component",
+          "name": "Jialian-Lecheng",
+          "class": "com.example.lecheng.LeCheng"
+        }
+      ]
+    },
+    {
+      "hooksClass": "com.yingshi.YingShiProxy",
+      "plugins": [
+        {
+          "type": "component",
+          "name": "Jialian-YingShi",
+          "class": "com.yingshi.YingShi"
+        }
+      ]
+    }
+  ]
+}
